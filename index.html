@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre todas las deducciones para la Renta 2025 (estatales y autonómicas). Optimiza tu declaración del IRPF, encuentra qué gastos desgravan y paga menos impuestos o consigue mayor devolución.">
+    <meta name="keywords" content="Renta 2025, deducciones autonómicas, IRPF 2025, hacer la declaración de la renta, deducciones estatales, ahorrar impuestos 2025, simulador renta, asistente fiscal">
+    <title>Asistente Renta 2025 | Guía Fiscal Profesional de Deducciones IRPF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <i data-lucide="landmark" class="logo-icon"></i>
+                <span class="logo-text">Asistente <span class="tax">Renta 2025</span></span>
+            </div>
+            <div class="nav-links">
+                <span class="status-badge">ACTUALIZADO RENTA 2025</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="page-content">
+
+            <!-- SEO Intro Content -->
+            <section style="padding: 32px 48px 0; width: 100%;">
+                <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); border-radius: 16px; padding: 32px 40px; color: white; display: flex; align-items: flex-start; gap: 24px; box-shadow: var(--shadow-lg);">
+                    <div style="flex-shrink: 0; background: rgba(255,255,255,0.15); padding: 16px; border-radius: 12px;">
+                        <i data-lucide="calculator" style="width: 36px; height: 36px; color: white;"></i>
+                    </div>
+                    <div style="flex: 1;">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; color: white;">Asegura la mayor devolución posible en tu IRPF</h2>
+                        <p style="color: #e0e7ff; line-height: 1.6; font-size: 1.05rem;">
+                            En este portal experto podrás realizar un escaneo gratuito de todas las <strong>deducciones autonómicas y estatales</strong> vigentes para la Declaración de la <strong>Renta correspondiente al año 2025</strong>. Averigua fácilmente qué desgravaciones te aplican según tu situación: alquiler, hijos, mejoras en el hogar o gastos escolares son determinantes para maximizar tus ahorros fiscales.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab: Wizard -->
+            <section id="wizard-tab" class="tab-content active">
+                <div class="wizard-container">
+                    <div class="wizard-header">
+                        <h2>Diagnóstico Profesional de Deducciones</h2>
+                        <p>Completa el perfil para identificar todas las ventajas fiscales aplicables a tu situación.</p>
+                    </div>
+                    <div id="wizard-step-container" class="wizard-body">
+                        <!-- Content will be injected by JS -->
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- Footer Disclaimer -->
+            <footer class="legal-disclaimer">
+                <p><strong>Aviso Importante:</strong> Esta herramienta tiene fines exclusivamente informativos. La normativa tributaria es compleja y puede estar sujeta a interpretaciones particulares o cambios de última hora (especialmente en regímenes forales). Se recomienda encarecidamente contrastar los resultados con un asesor fiscal oficial antes de presentar su declaración definitiva.</p>
+            </footer>
+    </main>
+
+    <!-- Print-only area for PDF generation -->
+    <div id="print-area" class="print-only"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
