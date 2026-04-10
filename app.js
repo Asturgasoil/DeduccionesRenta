@@ -252,7 +252,7 @@ function renderResults(res) {
             `;
         });
     }
-    html += `</div><div style="margin-top: 32px; display: flex; gap: 12px;">
+    html += `</div><div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
         <button class="next-btn" onclick="printReport()" style="background: #1e293b;">Generar Informe PDF Oficial</button>
         <button class="next-btn" onclick="initWizard()" style="background: #f1f5f9; color: #1e293b;">Nuevo Análisis</button>
     </div>`;
