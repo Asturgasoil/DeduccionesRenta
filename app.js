@@ -253,8 +253,8 @@ function renderResults(res) {
         });
     }
     html += `</div><div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
-        <button class="next-btn" onclick="printReport()" style="background: #1e293b;">Generar Informe PDF Oficial</button>
-        <button class="next-btn" onclick="initWizard()" style="background: #f1f5f9; color: #1e293b;">Nuevo Análisis</button>
+        <button class="next-btn" onclick="printReport()" style="background: #1e293b; flex: 1; min-width: 240px; margin-top: 0;">Generar Informe PDF Oficial</button>
+        <button class="next-btn" onclick="initWizard()" style="background: #f1f5f9; color: #1e293b; flex: 1; min-width: 240px; margin-top: 0;">Nuevo Análisis</button>
     </div>`;
     wizardContainer.innerHTML = html;
     lucide.createIcons();
@@ -273,7 +273,7 @@ window.printReport = () => {
                 ${d.title}
             </h3>
             <p style="font-size: 0.95rem; color: #334155;">${d.desc}</p>
-            <p style="font-size: 0.8rem; color: #2563eb; margin-top: 5px;"><strong>Referencia:</strong> ${d.link}</p>
+            <p style="font-size: 0.8rem; color: #2563eb; margin-top: 5px; word-break: break-all;"><strong>Referencia:</strong> ${d.link}</p>
         </div>
     `).join('');
 
